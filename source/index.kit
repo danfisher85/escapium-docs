@@ -1,0 +1,777 @@
+<!-- // Item -->
+<!-- $item_name_short = Alchemists -->
+<!-- $item_foldername = alchemists -->
+<!-- $item_name_full  = Alchemists - Sports Club and News WordPress Theme -->
+<!-- $item_type       = theme -->
+<!-- $item_zip        = alchemists.zip -->
+<!-- $item_date       = May 15th, 2018 -->
+
+<!-- // Links -->
+<!-- $link_instagram = https://www.instagram.com/dan.fisher.dev/ -->
+<!-- $link_twitter   = https://twitter.com/danfisher_dev -->
+<!-- $link_subscribe = http://eepurl.com/cqgINX -->
+<!-- $link_support   = https://danfisher.ticksy.com -->
+
+<!-- // Author -->
+<!-- $author_email   = dan.fisher.dev@gmail.com -->
+<!-- $author_url     = http://themeforest.net/user/dan_fisher -->
+<!-- $author_name    = Dan Fisher -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Documentation</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<header class="vl-header">
+		<div class="container">
+			<h1 class="vl-header--title">
+				<img class="vl-header--icon" src="img/template/df-logo.svg"><strong> <!-- $item_name_short --> Documentation</strong>
+			</h1>
+			<p class="vl-header--subtitle"><img src="img/template/clock-circular-outline.png">Last updated: <!-- $item_date --></p>
+		</div>
+	</header>
+	<!-- end .vl-header -->
+
+	<main class="vl-content">
+		<div class="container">
+
+
+			<div class="row">
+
+				<div class="col-sm-3 hidden-sm-down sidebar">
+
+					<div class="sidebar-inner">
+
+						<nav class="vl-site-nav" id="scrollspy">
+							<ul class="nav">
+								<li><a href="#welcome">Welcome</a></li>
+								<li><a href="#wordpress-information">WordPress Information</a></li>
+								<li>
+									<a href="#theme-installation">Theme Installation</a>
+									<ul class="sub-menu">
+										<li><a href="#intalling-required-plugins">Installing Required Plugins</a></li>
+										<li><a href="#importing-demo-data">Import Demo Data</a></li>
+										<li><a href="#permalinks-structure">Permalinks Structure</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#theme-customization">Theme Customization</a>
+									<ul class="sub-menu">
+										<li><a href="#setting-up-a-logo">Setting Up A Logo</a></li>
+										<li><a href="#setting-up-a-favicon">Setting Up A Favicon</a></li>
+										<li><a href="#setting-up-top-menu">Setting Up Top Menu</a></li>
+										<li><a href="#changing-colors">Changing Colors</a></li>
+										<li><a href="#typography-customization">Typography Customization</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href="#blog-posts">Blog & Posts</a></li> -->
+								<li><a href="#widgets">Widgets</a></li>
+								<li><a href="#sportspress">SportsPress</a></li>
+								<li><a href="#visual-composer">Visual Composer</a></li>
+								<li><a href="#shop">Shop</a></li>
+								<li><a href="#contact-form-7">Contact Form 7</a></li>
+								<li><a href="#child-theme">Child Theme</a></li>
+								<li><a href="#translate-theme">Translate Theme</a></li>
+								<li><a href="#how-to-update-theme">How To Update Theme</a></li>
+							</ul>
+						</nav>
+						<!-- end .vl-site-nav -->
+
+					</div>
+
+
+				</div>
+
+				<div class="col-md-9 content">
+
+					<div class="content-inner">
+
+
+					<section class="vl-section" id="welcome">
+						<h2 class="vl-section--title">Welcome</h2>
+						<div class="vl-section--content">
+
+							<a target="_blank" href="<!-- $link_instagram -->" class="vl-btn vl-btn--instagram"><img src="img/template/instagram-symbol.png" alt="">Follow Us</a>
+
+							<a target="_blank" href="<!-- $link_twitter -->" class="vl-btn vl-btn--twitter"><img src="img/template/twitter.png" alt="">Follow Us</a>
+
+							<a target="_blank" href="<!-- $link_subscribe -->" class="vl-btn vl-btn--subscribe"><img src="img/template/e-mail-envelope.png" alt="">Subscribe Us</a>
+
+							<a target="_blank" href="<!-- $link_support -->" class="vl-btn"><img src="img/template/help.png" alt="">Get Help</a>
+
+							<p></p>
+
+
+							<p>Thank you very much for purchasing our <!-- $item_type -->. We've put a lot of hard work into it, and we hope you love it as much as we do. As far as the documentation is concerned, we have tried to cover as much as possible to help you get your new <!-- $item_type --> up and running and to help you customise it.</p>
+
+							<p>If you have any questions or problems that aren't answered here, please feel free to create a new ticket on our <a href="<!-- $link_support -->">support site</a>.</p>
+
+							<p>We love to hear your feedback - if you find any bugs or have suggestions for improvements please get in touch. Nearly all of the time we follow your advice and issue a rapid update to <!-- $item_name_short -->.</p>
+
+							<div class="vl-alert vl-alert--warning"><p>If you like our work, please rate it. If you’re about to rate it with less than 5 stars, please let us know the reason first and we will do our best to improve the theme. Thanks so much!</p></div>
+
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="wordpress-information">
+						<h2 class="vl-section--title">WordPress Information</h2>
+						<div class="vl-section--content">
+
+							<p>Since WordPress is constantly being updated information about how to install WordPress may become out of date, so you always can read official guide <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">HERE</a></p>
+
+							<p>Below are all the useful links for WordPress information:</p>
+
+							<ul>
+								<li>
+									<a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">WordPress Codex</a> – general info about WordPress and how to install on your server.
+								</li>
+								<li>
+									<a target="_blank" href="http://codex.wordpress.org/First_Steps_With_WordPress">First Steps With WordPress</a> – general information that covers a wide variety of topics.
+								</li>
+								<li>
+									<a target="_blank" href="http://codex.wordpress.org/FAQ_New_To_WordPress">FAQ New To WordPress</a> – the most popular FAQ’s regarding WordPress.
+								</li>
+							</ul>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section" id="theme-installation">
+						<h2 class="vl-section--title">Theme Installation</h2>
+						<div class="vl-section--content">
+
+							<p>Once you've downloaded the installation file on ThemeForest, extract it and locate a file called <code><!-- $item_zip --></code>. You can install the theme by using one of two installation methods:</p>
+
+							<h6>WordPress upload</h6>
+
+							<ol class="toc">
+								<li>
+									Login to WordPress admin.
+								</li>
+								<li>
+									Go to <strong>Admin panel > Appearance > Themes > Add New > Upload Theme</strong>.
+								</li>
+								<li>
+									Click on <strong>Choose File</strong> and select <code><!-- $item_zip --></code>.
+								</li>
+								<li>
+									Click on <strong>Install Now</strong>.
+								</li>
+								<li>
+									When your theme is successfully installed, click <strong>Activate</strong> to activate the newly installed theme.
+								</li>
+							</ol>
+
+							<h6>FTP upload</h6>
+
+							<ol class="toc">
+								<li>
+									Using FTP client, login to the server where your WordPress website is hosted.
+								</li>
+								<li>
+									Using FTP client, navigate to the <code>/wp-content/themes/</code> directory under your WordPress website's root directory.
+								</li>
+								<li>
+									Using FTP client, upload the <strong><!-- $item_name_short --></strong> directory to themes directory on remote server.
+								</li>
+								<li>
+									Once uploaded, navigate to <strong>Dashboard > Appearance > Themes</strong> in the <strong>WordPress Dashboard</strong> and hit <strong>Activate</strong> below your newly uploaded theme.
+								</li>
+							</ol>
+
+							<div class="vl-alert vl-alert--info">
+								<p>When you use first or second method, please make sure that you're uploading the <code><!-- $item_zip --></code> file, not entire package you downloaded. If you upload the wrong file you will get an error stating <strong>“Error: missing style.css stylesheet.”</strong></p>
+							</div>
+
+							<div class="vl-alert vl-alert--success">
+								<p>Once installation is complete, your <strong><!-- $item_name_short --></strong> theme will be ready to use. You should now see <strong><!-- $item_name_short --></strong> theme as active.</p>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="intalling-required-plugins">
+						<h2 class="vl-section--title">Installing Required Plugins</h2>
+						<div class="vl-section--content">
+							<p>When you first install the theme you'll see a popup on your dashboard from the theme asking you to install a number of plugins.</p>
+
+							<p>Allow the theme to install these for you. The plugins which are installed are dependent of the theme, the images below are for illustrative purposes only. </p>
+
+							<img src="img/install-required-plugins.png" class="img" alt="">
+
+							<div class="vl-alert vl-alert--info"><p>You can install all plugins at the same time by checking the box at the top of the this list.</p></div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="importing-demo-data">
+						<h2 class="vl-section--title">Importing Demo Data</h2>
+						<div class="vl-section--content">
+							<p>We have included the exported files from our demo, this allows you to quickly set up your theme the same way our demo is set up.</p>
+
+							<div class="vl-alert vl-alert--warning">
+								Before you begin, make sure all the required plugins are activated.
+							</div>
+
+							<ol class="toc">
+								<li>
+									Log-in to your WordPress backend and navigage to <strong>Appearance > Import Demo Data</strong>.
+								</li>
+								<li>
+									Click on <strong>Import Demo Data</strong> only once.
+								</li>
+								<li>
+									That's it! :)
+								</li>
+							</ol>
+
+							<img src="img/demo-data-import.png" class="img">
+
+							<div class="vl-alert vl-alert--info"><p>
+								You now just need to wait for the importer to finish. This might take a few minutes depending on your hosting server speed.</p>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section" id="permalinks-structure">
+						<h2 class="vl-section--title">Permalinks Structure</h2>
+						<div class="vl-section--content">
+
+							<p id="permalink">Finally, if you have not done so already, its highly advisable to update your permalink settings. To do this, head to <strong>Settings > Permalinks</strong> and select any option other than default. We recommended 'postname' - as you can see below.</p>
+
+							<img class="img" src="img/permalinks.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="theme-customization">
+						<h2 class="vl-section--title">Theme Customization</h2>
+						<div class="vl-section--content">
+							<p>Theme Options panel allows you to customize color styling, typography, text etc. of the theme. Go to <strong>Dashboard > Theme Options</strong> to start customizing the theme.</p>
+
+							<img src="img/theme-options.png" alt="" class="img">
+
+							<div class="box">
+								<ul class="list-unstyled">
+									<li>
+										<h6 class="sm-title">General Settings</h6>
+										<p>You can set the basic settings here.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Header</h6>
+										<p>The section allows you to setup site Header.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Page Heading</h6>
+										<p>Customize Page Heading in this section.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Blog & Posts</h6>
+										<p>You can setup Blog and Posts settings here.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Styling</h6>
+										<p>Here you can customize theme colors.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">WooCommerce</h6>
+										<p>This section allows to change WooCommerce settings.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Preloader</h6>
+										<p>Want to change preloader styling? Jump into this section.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Footer</h6>
+										<p>You can setup Footer settings here.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Typography</h6>
+										<p>Customize theme Typography in this section</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Social</h6>
+										<p>Enter your social details here.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">404 Page</h6>
+										<p>This section allows you to setup 404 error page.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Custom CSS</h6>
+										<p>Need to tweak something but can't approciate option? Just add your custom CSS here.</p>
+									</li>
+									<li>
+										<h6 class="sm-title">Import/Export</h6>
+										<p>Here you can import/export theme options.</p>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="setting-up-a-logo">
+						<h2 class="vl-section--title">Setting Up a Logo</h2>
+						<div class="vl-section--content">
+							<p>You can add your own custom logo in seconds, thanks to our easy to use theme options. To begin, just head to <strong>Theme Options > General Settings</strong> in your WordPress admin area.</p>
+
+							<p>Upload your logo in Custom Logo field. Also upload your image to <strong>Custom Logo @2x</strong> field for retina displays or specify the image URL. It should be x2 time bigger than standard logo image.</p>
+
+							<p>Use <strong>Custom Logo Width</strong> and <strong>Custom Logo Width on Mobile</strong> option fields to change logo width.</p>
+
+							<img class="img" src="img/change-logo.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="setting-up-a-favicon">
+						<h2 class="vl-section--title">Setting Up a Favicon</h2>
+						<div class="vl-section--content">
+							<ol class="toc">
+								<li>
+									Go to <strong>Appearance → Customize → Site Identity → Site Icon</strong>
+								</li>
+								<li>
+									Click on <strong>Select Image</strong>
+								</li>
+								<li>
+									Upload your favicon or choose from existing.
+								</li>
+								<li>
+									Crop your image or Skip cropping.
+								</li>
+								<li>
+									Click on <strong>Save & Publish</strong>.
+								</li>
+							</ol>
+
+							<img class="img" src="img/change-favicon.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="setting-up-top-menu">
+						<h2 class="vl-section--title">Setting Up Top Menu</h2>
+						<div class="vl-section--content">
+							<p>Starting from v2.1.0 you can setting up menu instead of simple links in the Header Top Bar.</p>
+
+							<div class="vl-alert vl-alert--info">
+								<p>
+									Please make sure that you have installed next plugins: <a href="https://wordpress.org/plugins/nav-menu-roles/">Nav Menu Roles</a>
+								</p>
+							</div>
+
+							<br>
+							<h5>Creating Top Menu</h5>
+							<p>To create Top Menu please follow next steps:</p>
+
+							<ol class="toc">
+								<li>
+									Go to <strong>Appearance → Menus → Edit Menus</strong>
+								</li>
+								<li>
+									Create a new menu by clicking on <strong>Create a new menu</strong> link
+								</li>
+								<li>
+									Enter menu name, e.g. <strong>Top Menu</strong>
+								</li>
+								<li>
+									To assign the menu to the menu location, click the <strong>Manage Locations</strong> tab then select Top Menu from the drop-down under <strong>Assigned Menu</strong> and then click the <strong>Save Changes</strong> button.
+
+									<p>
+										<img src="img/top-menu-location.png" class="img" alt="">
+									</p>
+								</li>
+							</ol>
+
+							<br>
+							<h5>Adding Menu Items</h5>
+							<ol class="toc">
+								<li>
+									Go to <strong>Appearance → Menus → Edit Menus → Top Menu</strong>
+								</li>
+								<li>
+									Add <strong>My Account</strong> page, change label to <strong>Register</strong> and enable <em>Display Mode: Logged Out Users</em>, so that the register menu link only shows for logged out user.
+								</li>
+								<li>
+									Add <strong>My Account</strong> page, change label to <strong>Login</strong> and enable <em>Display Mode: Logged Out Users</em>.
+								</li>
+								<li>
+									Add <strong>My Account</strong> page and enable <em>Display Mode: Logged In Users</em>, so that the account menu link only shows for logged in user.
+								</li>
+								<li>
+									Add a custom link using <strong>Custom Links</strong> menu creation option with url <code>[site-url]/my-account/customer-logout/</code> and label <strong>Logout</strong>. Also enable <em>Display Mode: Logged In Users</em>.
+									<p>
+										<img src="img/top-menu-logout-add.png" class="img" alt="">
+									</p>
+								</li>
+								<li>
+									As an option you can add <code>nav-account__item--logout</code> CSS class to logout link to make it a little bit different.
+									
+									<p>
+										<img src="img/top-menu-logout.png" class="img" alt="">
+									</p>
+								</li>
+							</ol>
+							<div class="vl-alert vl-alert--info">
+								<p>
+									In your WordPress backend navigate to WooCommerce > Settings > Accounts > My Account Endpoints and you will see what the URL of the edit-address should be, it is often set to "/my-account/customer-logout/"
+								</p>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="changing-colors">
+						<h2 class="vl-section--title">Changing Colors</h2>
+						<div class="vl-section--content">
+							<p>To change theme colors navigate to <strong>Theme Options > Styling</strong></p>
+
+							<p>Here you can control the colors site.</p>
+
+							<img class="img" src="img/change-color.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="typography-customization">
+						<h2 class="vl-section--title">Typography Customization</h2>
+						<div class="vl-section--content">
+							<p>To customize theme typography navigate to <strong>Theme Options → Typography</strong> and enable customization options <strong>Customize Body font?</strong> and <strong>Customize Headings?</strong>.</p>
+
+							<p>Here you can control Typography options such as Font Family, Font Weight, Font Size, Line Height, Font Color.</p>
+
+							<img class="img" src="img/customize-typography.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<!-- <section class="vl-section" id="blog-posts">
+						<h2 class="vl-section--title">Blog & Posts</h2>
+						<div class="vl-section--content">
+
+						</div>
+					</section> -->
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section" id="widgets">
+						<h2 class="vl-section--title">Widgets</h2>
+						<div class="vl-section--content">
+							<p>To build your site you can also use Widgets. Navigate to <strong>Appearance > Widgets</strong> and using drag-and-grop interface place widgets into Widgets Area (Sidebar, Pushy Panel, Footer Area 1 etc.)</p>
+
+							<img src="img/widgets.png" alt="" class="img">
+
+							<div class="vl-alert vl-alert--info">Note, all custom widgets have ALC prefix, e.g. <strong>ALC: Ad Spot</strong></div>
+
+							<p>Get more info about widgets <a href="https://codex.wordpress.org/WordPress_Widgets">here</a>.</p>
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="sportspress">
+						<h2 class="vl-section--title">SportsPress</h2>
+						<div class="vl-section--content">
+							<p>SportsPress plugin created to transform your WordPress site into a fully configurable team, club, or league website. Features a suite of sports tools including fixtures, results, automated standings, players rankings, and individual profiles for clubs, players, and staff.</p>
+
+							<img src="img/sportspress.png" alt="" class="img">
+
+							To get information about using the plugin please visit the <a href="http://support.themeboy.com/category/327-getting-started">official documentation page</a>.
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="visual-composer">
+						<h2 class="vl-section--title">Visual Composer</h2>
+						<div class="vl-section--content">
+							<p><!-- $item_name_short --> theme bundled with Visual Composer Page Builder plugin. To get information how to work with please visit <a href="https://wpbakery.atlassian.net/wiki/display/VC/Visual+Composer+Pagebuilder+for+WordPress">official documentation page</a>.</p>
+
+							<div class="vl-alert vl-alert--info"><p>All Shortcodes are integrated in Visual Composer you can find them under <strong>ALC</strong> tab.</p>
+							</div>
+
+							<img class="img" src="img/visual-composer.png" alt="">
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="shop">
+						<h2 class="vl-section--title">Shop</h2>
+						<div class="vl-section--content">
+							<p>WooCommerce is a free eCommerce WordPress plugin that allows you to sell anything, beautifully. Built to integrate seamlessly with WordPress, WooCommerce is the world’s favorite eCommerce solution that gives both store owners and developers complete control.</p>
+
+							<img src="img/shop.png" alt="" class="img">
+
+							<p>To get more information please check the <a href="https://docs.woocommerce.com/documentation/plugins/woocommerce/getting-started/">official documentation</a>.</p>
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="contact-form-7">
+						<h2 class="vl-section--title">Contact Form 7</h2>
+						<div class="vl-section--content">
+							<p><strong>Contact Form 7</strong> is our recommended form plugin for WordPress. It is a simple but powerful form creator for WordPress. Here we will show you how to use Contact Form 7 to create and edit a basic form.</p>
+
+							<p>After Contact Form 7 is installed, you will find a new menu item in your WordPress admin area called <strong>Contact</strong>, here is where your forms and created and edited. From the Contact main screen, you will see your first contact form, its usually a default form called <strong>Contact Form 1</strong> OR if you have imported the demo data for our theme you may see a few forms that we have made specially for you.</p>
+
+<pre><code class="language-markup">&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="contact-form-name"&gt;Your Name &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+      [text* input-name id:input-name class:form-control placeholder "Your full name..."]
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="contact-form-email"&gt;Your Email &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+      [email* input-email id:input-email class:form-control placeholder "Your email..."]
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="contact-form-subject"&gt;Subject&lt;/label&gt;
+      [text input-subject id:input-subject class:form-control placeholder "Your subject..."]
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="contact-form-message"&gt;Your Message &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+  [textarea* textarea id:textarea class:form-control x5 placeholder "Enter your message here.."]
+&lt;/div&gt;
+&lt;div class="form-group form-group--submit"&gt;
+  [submit id:submit class:btn class:btn-primary-inverse class:btn-lg class:btn-block "Send Your Message"]
+&lt;/div&gt;
+</code></pre>
+							<img class="img" src="img/contact-form.png" alt="">
+
+							<div class="vl-alert vl-alert--info"><p>You can add additional input from the right drop down, after setting up your form click <strong>Save</strong> button from right.</p>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section" id="child-theme">
+						<h2 class="vl-section--title">Child Theme</h2>
+						<div class="vl-section--content">
+							<p>Child themes are separate themes that rely on a parent theme for most of their functionality. If you are using a child theme, WordPress will check your child theme first to see if a specific functionality exists. If it doesn’t, it will use the parent theme. This is great because it allows you to modify only what you need.</p>
+
+							<div class="vl-alert vl-alert--info"><p>Child themes should always be used if you plan on modifying even a single character in your theme.</p>
+							</div>
+
+							<p>If you plan to edit the theme files, like style.css, we're suggesting you to install both <code><!-- $item_zip --></code> and <code><!-- $item_foldername -->-child.zip</code> themes, then activate the child theme. Child themes are great because allow you to edit the theme and also lets you update the original theme in the future, without loosing your edited files work.
+							</p>
+
+							<p>More about child themes and how to use them you can read here: <a href="http://codex.wordpress.org/Child_Themes">LINK</a>.</p>
+							</div>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section" id="translate-theme">
+						<h2 class="vl-section--title">Translate Theme</h2>
+						<div class="vl-section--content">
+
+							<p>There are 2 options to translate your theme:</p>
+
+							<div class="spacer"></div>
+
+							<h5>Translation with Loco Translate plugin</h5>
+
+							<ol class="toc">
+								<li>Install Loco Translate Plugin <strong><a href="https://wordpress.org/plugins/loco-translate/">LINK</a></strong></li>
+								<li>Read more <strong><a href="https://localise.biz/wordpress/plugin/beginners#setup">HERE</a></strong></li>
+							</ol>
+
+							<img class="img" src="img/loco-translate.png" alt="">
+
+							<div class="vl-alert vl-alert--info"><p>You can find .POT file in next folder <code>wp-content/themes/<!-- $item_foldername -->/languages/</code></p></div>
+
+							<div class="spacer"></div>
+
+							<h5>Translation with Poedit application</h5>
+
+							<ol class="toc">
+								<li>
+									Download and install <a href="https://poedit.net">PoEdit</a> if you haven’t done so already.
+								</li>
+								<li>
+									Open <code>wp-content/themes/<!-- $item_foldername -->/languages/<!-- $item_foldername -->.pot</code> with PoEdit and translate all string in your language.
+								</li>
+								<li>
+									Go to <strong>File → Save as…</strong> to save your translations in a .po file. If you do not know how to name it, take a look at this page: <a href="http://codex.wordpress.org/WordPress_in_Your_Language">http://codex.wordpress.org/WordPress_in_Your_Language</a>.
+								</li>
+								<li>
+									Go to <strong>File → Compile</strong> to .mo and save your .mo file next to the .po file in <code>/wp-content/themes/<!-- $item_foldername -->/languages/</code>
+								</li>
+								<li>
+									Or you can set your PoEdit to always compile a .mo file when saving changes by clicking <strong>File → Preferences</strong> and on the Editor tab check the <em>Automatically compile .mo file on save</em> box.
+								</li>
+							</ol>
+
+							<div class="spacer"></div>
+
+							<h6>Updating Translation</h6>
+							<p>After updates, you can update your .po file by opening it and then going to <strong>Catalog → Update from POT file</strong>. Choose the file and it will be updated accordingly.</p>
+
+							<div class="spacer"></div>
+
+							<h6>Keeping Translation Files Upgrade Safe</h6>
+							<p>You can put your .po/.mo files in the WP_LANG directory which will keep them safe from updates. This is usually the <code>wp-content/languages/</code> directory.</p>
+
+							<p>So for example, you need put your .po/.mo files in <code>wp-content/languages/themes/<!-- $item_foldername -->-LOCALE.mo</code>, replacing LOCALE with your language code.</p>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+					<section class="vl-section" id="how-to-update-theme">
+						<h2 class="vl-section--title">How to Update Theme</h2>
+						<div class="vl-section--content">
+							<p>There are 3 methods to update WordPress themes.</p>
+
+							<div class="spacer"></div>
+
+							<h4>Auto Udates via Envato Token Key (recommended)</h4>
+							<ol class="toc">
+								<li>
+									Login to the <a href="https://themeforest.net">ThemeForest account</a> that was used to purchase the theme.
+								</li>
+								<li>
+									Click on the <a href="https://build.envato.com/create-token/?purchase:download=t&purchase:verify=t&purchase:list=t">Generate A Personal Token</a> link provided to be directed to the Token Creation page.
+								</li>
+								<li>
+									Enter a name in the ‘Token Name’ field. You can use any name that will be easy to remember and associate, for example: <strong>Alchemists</strong>.
+								</li>
+								<li>
+									Under the ‘Permissions Needed’ section, make sure the following checkboxes are checked:
+									<ul>
+										<li>View Your Envato Account Username</li>
+										<li>Download Your Purchased Items</li>
+										<li>List Purchases You’ve Made</li>
+										<li>Verify Purchases You’ve Made</li>
+									</ul>
+
+									<img class="img" src="img/screen-permissions.jpg" alt="">
+								</li>
+								<li>
+									Check the ‘Terms and Conditions’ checkbox, then click ‘Create Token’. You’ll now see the ‘Success!’ page with your Personal Token displayed.
+									<img class="img" src="img/screen-token-success.png" alt="">
+								</li>
+								<li>Copy and save your Personal Token to a safe place and log into your website’s <strong>Alchemists → Registration</strong> tab and paste your Personal Token into the provided field. Click the ‘Submit’ button to verify</li>
+								<li>If you see a green check mark beside your Personal Token, you have successfully registered your product.
+									<img class="img" src="img/screen-token-congrats.png" alt="">
+								</li>
+							</ol>
+
+							<p>Once your theme is set up WordPress will periodically check for updates, so keeping your item up to date is as simple as a few clicks.</p>
+
+							<div class="spacer"></div>
+
+							<h4>Update Through WordPress Admin Panel</h4>
+							<ol class="toc">
+								<li>
+									Download the latest <!-- $item_name_short --> file from ThemeForest.
+								</li>
+								<li>
+									Open <strong>Appearance -> Themes</strong>
+								</li>
+								<li>
+									Choose another theme (not <!-- $item_name_short -->)
+								</li>
+								<li>
+									Delete <strong><!-- $item_name_short --></strong>
+								</li>
+								<li>
+									Install updated theme in <strong>Appearance -> Themes -> Install Themes -> Upload</strong>
+								</li>
+							</ol>
+
+							<div class="spacer"></div>
+
+							<h4>FTP Update</h4>
+							<ol class="toc">
+								<li>Download the latest <strong><!-- $item_name_short --></strong> file from ThemeForest.</li>
+								<li>Extract it and locate <code><!-- $item_zip --></code>.</li>
+								<li>Extract <code><!-- $item_zip --></code> and locate the <strong><!-- $item_name_short --></strong> folder.</li>
+								<li>Replace content of the <strong><!-- $item_name_short --></strong> folder to the <code>/wp-content/themes/<!-- $item_foldername --></code> folder of your web site.</li>
+							</ol>
+
+						</div>
+					</section>
+					<!-- end .vl-section -->
+
+
+					<section class="vl-section">
+
+						<h4>Don`t forget to rate it <img src="img/template/rate.png" alt="" class="rate"> <img src="img/template/rate.png" alt="" class="rate"> <img src="img/template/rate.png" alt="" class="rate"> <img src="img/template/rate.png" alt="" class="rate"> <img src="img/template/rate.png" alt="" class="rate"></h4>
+
+						<p></p>
+
+						<a target="_blank" href="<!-- $link_instagram -->" class="vl-btn vl-btn--instagram"><img src="img/template/instagram-symbol.png" alt="">Follow Us</a>
+
+						<a target="_blank" href="<!-- $link_twitter -->" class="vl-btn vl-btn--twitter"><img src="img/template/twitter.png" alt="">Follow Us</a>
+
+						<a target="_blank" href="<!-- $link_subscribe -->" class="vl-btn vl-btn--subscribe"><img src="img/template/e-mail-envelope.png" alt="">Subscribe Us</a>
+
+						<a target="_blank" href="<!-- $link_support -->" class="vl-btn"><img src="img/template/help.png" alt="">Get Help</a>
+
+					</section>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</main>
+
+
+
+	<footer class="vl-footer">
+		<div class="container">
+			<p>Cheers &amp; Thanks again for your purchase! Powered by <a href="<!-- $author_url -->" target="_blank"><!-- $author_name --></a></p>
+		</div>
+	</footer>
+
+
+
+</body>
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/theia-sticky-sidebar.js"></script>
+<script src="js/prism-min.js"></script>
+<script src="js/script.js"></script>
+</html>
